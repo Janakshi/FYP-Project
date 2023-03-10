@@ -1,0 +1,833 @@
+<Label>
+    font_size:20
+
+    color: (1,1,1,1)
+
+<MyGridLayout>
+
+
+    GridLayout:
+        cols:6
+        padding: [0,0,0,80]
+        size: root.width, root.height
+        color: (30 / 255, 40 / 255, 48 / 255, 1)
+
+        BoxLayout:
+            #rows:3
+            orientation: 'vertical'
+
+            Label:
+                text: "Booth 1"
+                font_size:30
+                size_hint: (1,0.5)
+
+                canvas.before:
+                    Color:
+                        rgba: (30 / 255, 40 / 255, 48 / 255, 1)
+                    RoundedRectangle:
+                        size: [self.width-60, self.height-150]
+                        pos: [(self.center_x - (self.width-60)/2),(self.center_y - (self.height-150)/2)]
+
+
+
+
+            Label:
+                color: (0,0,0,1)
+                text: root.gb1Pecnt
+                color: (1,1,1,1)
+                size_hint: None,None
+                width:100
+                height:100
+
+                pos_hint: {'center_x':0.5}
+
+                canvas.before:
+                    Color:
+                        rgba: (1,1,1,1)
+                    Ellipse:
+                        size: self.size
+                        pos: self.pos
+
+                    Color:
+                        rgba: (50/255, 168/255, 82/255, 1)
+                    Ellipse:
+                        size: self.size
+                        pos: self.pos
+                        angle_end: root.gb1Angle
+
+                    Color:
+                        rgba: (0,0,0,1)
+                    Ellipse:
+                        size: [self.width-30, self.height-30]
+                        pos: [(self.center_x - (self.width-30)/2),(self.center_y - (self.height-30)/2)]
+
+            GridLayout:
+                rows:4
+                cols:2
+                padding: [25,80,0,0]
+                spacing: [10,50]
+
+
+
+                Label:
+                    text: "Available Vol:"
+                    text_size: self.size
+                    halign: 'center'
+                    valign: 'middle'
+                    canvas.before:
+                        Color:
+                            rgba: (30 / 255, 40 / 255, 48 / 255, 1)
+                        RoundedRectangle:
+                            size: 220, 80
+                            pos: [self.center_x - 60,self.center_y - 40]
+
+                Label:
+                    
+                    text_size: self.size
+                    text: root.b1AvaVol
+                    halign: 'center'
+                    valign: 'middle'
+
+
+                Label:
+                    text: "Max Vol:"
+                    text_size: self.size
+                    halign: 'center'
+                    valign: 'middle'
+                    canvas.before:
+                        Color:
+                            rgba: (30 / 255, 40 / 255, 48 / 255, 1)
+                        RoundedRectangle:
+                            size: 220, 80
+                            pos: [self.center_x - 60,self.center_y - 40]
+
+                Label:
+                    text: "240L"
+                    text_size: self.size
+                    halign: 'center'
+                    valign: 'middle'
+
+                Label:
+                    text: "Requested:"
+                    text_size: self.size
+                    halign: 'center'
+                    valign: 'middle'
+                    canvas.before:
+                        Color:
+                            rgba: (30 / 255, 40 / 255, 48 / 255, 1)
+                        RoundedRectangle:
+                            size: 220, 80
+                            pos: [self.center_x - 60,self.center_y - 40]
+
+                Label:
+                    
+                    text: "Yes"
+                    text_size: self.size
+                    halign: 'center'
+                    valign: 'middle'
+
+
+
+
+                Label:
+                    text: "Elapsed time:"
+                    text_size: self.size
+                    halign: 'center'
+                    valign: 'middle'
+                    canvas.before:
+                        Color:
+                            rgba: (30 / 255, 40 / 255, 48 / 255, 1)
+                        RoundedRectangle:
+                            size: 220, 80
+                            pos: [self.center_x - 60,self.center_y - 40]
+
+                Label:
+                    
+					
+                    text: "10 min"
+                    text_size: self.size
+                    halign: 'center'
+                    valign: 'middle'
+
+
+        BoxLayout:
+            #rows:3
+            orientation: 'vertical'
+
+            Label:
+                text: "Booth 2"
+                font_size:30
+                size_hint: (1,0.5)
+
+                canvas.before:
+                    Color:
+                        rgba: (30 / 255, 40 / 255, 48 / 255, 1)
+                    RoundedRectangle:
+                        size: [self.width-60, self.height-150]
+                        pos: [(self.center_x - (self.width-60)/2),(self.center_y - (self.height-150)/2)]
+
+
+
+
+            Label:
+                color: (0,0,0,1)
+                text: root.gb2Pecnt
+                color: (1,1,1,1)
+                size_hint: None,None
+                width:100
+                height:100
+
+                pos_hint: {'center_x':0.5}
+
+                canvas.before:
+                    Color:
+                        rgba: (1,1,1,1)
+                    Ellipse:
+                        size: self.size
+                        pos: self.pos
+
+                    Color:
+                        rgba: (50/255, 168/255, 82/255, 1)
+                    Ellipse:
+                        size: self.size
+                        pos: self.pos
+                        angle_end: root.gb2Angle
+
+                    Color:
+                        rgba: (0,0,0,1)
+                    Ellipse:
+                        size: [self.width-30, self.height-30]
+                        pos: [(self.center_x - (self.width-30)/2),(self.center_y - (self.height-30)/2)]
+
+            GridLayout:
+                rows:4
+                cols:2
+                padding: [25,80,0,0]
+                spacing: [10,50]
+
+
+
+                Label:
+                    text: "Available Vol:"
+                    text_size: self.size
+                    halign: 'center'
+                    valign: 'middle'
+                    canvas.before:
+                        Color:
+                            rgba: (30 / 255, 40 / 255, 48 / 255, 1)
+                        RoundedRectangle:
+                            size: 220, 80
+                            pos: [self.center_x - 60,self.center_y - 40]
+
+                Label:
+                    
+					
+                    text_size: self.size
+                    text: root.b2AvaVol
+                    halign: 'center'
+                    valign: 'middle'
+
+
+                Label:
+                    text: "Max Vol:"
+                    text_size: self.size
+                    halign: 'center'
+                    valign: 'middle'
+                    canvas.before:
+                        Color:
+                            rgba: (30 / 255, 40 / 255, 48 / 255, 1)
+                        RoundedRectangle:
+                            size: 220, 80
+                            pos: [self.center_x - 60,self.center_y - 40]
+
+                Label:
+                    text: "240L"
+                    text_size: self.size
+                    halign: 'center'
+                    valign: 'middle'
+
+                Label:
+                    text: "Requested:"
+                    text_size: self.size
+                    halign: 'center'
+                    valign: 'middle'
+                    canvas.before:
+                        Color:
+                            rgba: (30 / 255, 40 / 255, 48 / 255, 1)
+                        RoundedRectangle:
+                            size: 220, 80
+                            pos: [self.center_x - 60,self.center_y - 40]
+
+                Label:
+                   
+				   
+                    text: "Yes"
+                    text_size: self.size
+                    halign: 'center'
+                    valign: 'middle'
+
+                Label:
+                    text: "Elapsed time:"
+                    text_size: self.size
+                    halign: 'center'
+                    valign: 'middle'
+                    canvas.before:
+                        Color:
+                            rgba: (30 / 255, 40 / 255, 48 / 255, 1)
+                        RoundedRectangle:
+                            size: 220, 80
+                            pos: [self.center_x - 60,self.center_y - 40]
+
+                Label:
+                    
+					
+                    text: "10 min"
+                    text_size: self.size
+                    halign: 'center'
+                    valign: 'middle'
+
+
+        BoxLayout:
+            #rows:3
+            orientation: 'vertical'
+
+            Label:
+                text: "Booth 3"
+                font_size:30
+                size_hint: (1,0.5)
+
+                canvas.before:
+                    Color:
+                        rgba: (30 / 255, 40 / 255, 48 / 255, 1)
+                    RoundedRectangle:
+                        size: [self.width-60, self.height-150]
+                        pos: [(self.center_x - (self.width-60)/2),(self.center_y - (self.height-150)/2)]
+
+
+
+
+            Label:
+                color: (0,0,0,1)
+                text: root.gb3Pecnt
+                color: (1,1,1,1)
+                size_hint: None,None
+                width:100
+                height:100
+
+                pos_hint: {'center_x':0.5}
+
+                canvas.before:
+                    Color:
+                        rgba: (1,1,1,1)
+                    Ellipse:
+                        size: self.size
+                        pos: self.pos
+
+                    Color:
+                        rgba: (50/255, 168/255, 82/255, 1)
+                    Ellipse:
+                        size: self.size
+                        pos: self.pos
+                        angle_end: root.gb3Angle
+
+                    Color:
+                        rgba: (0,0,0,1)
+                    Ellipse:
+                        size: [self.width-30, self.height-30]
+                        pos: [(self.center_x - (self.width-30)/2),(self.center_y - (self.height-30)/2)]
+
+            GridLayout:
+                rows:4
+                cols:2
+                padding: [25,80,0,0]
+                spacing: [10,50]
+
+
+
+                Label:
+                    text: "Available Vol:"
+                    text_size: self.size
+                    halign: 'center'
+                    valign: 'middle'
+                    canvas.before:
+                        Color:
+                            rgba: (30 / 255, 40 / 255, 48 / 255, 1)
+                        RoundedRectangle:
+                            size: 220, 80
+                            pos: [self.center_x - 60,self.center_y - 40]
+
+                Label:
+                    
+					
+                    text_size: self.size
+                    text: root.b3AvaVol
+                    halign: 'center'
+                    valign: 'middle'
+
+
+                Label:
+                    text: "Max Vol:"
+                    text_size: self.size
+                    halign: 'center'
+                    valign: 'middle'
+                    canvas.before:
+                        Color:
+                            rgba: (30 / 255, 40 / 255, 48 / 255, 1)
+                        RoundedRectangle:
+                            size: 220, 80
+                            pos: [self.center_x - 60,self.center_y - 40]
+
+                Label:
+                    text: "240L"
+                    text_size: self.size
+                    halign: 'center'
+                    valign: 'middle'
+
+                Label:
+                    text: "Requested:"
+                    text_size: self.size
+                    halign: 'center'
+                    valign: 'middle'
+                    canvas.before:
+                        Color:
+                            rgba: (30 / 255, 40 / 255, 48 / 255, 1)
+                        RoundedRectangle:
+                            size: 220, 80
+                            pos: [self.center_x - 60,self.center_y - 40]
+
+                Label:
+                    
+					
+                    text: "Yes"
+                    text_size: self.size
+                    halign: 'center'
+                    valign: 'middle'
+
+                Label:
+                    text: "Elapsed time:"
+                    text_size: self.size
+                    halign: 'center'
+                    valign: 'middle'
+                    canvas.before:
+                        Color:
+                            rgba: (30 / 255, 40 / 255, 48 / 255, 1)
+                        RoundedRectangle:
+                            size: 220, 80
+                            pos: [self.center_x - 60,self.center_y - 40]
+
+                Label:
+                    
+					
+                    text: "10 min"
+                    text_size: self.size
+                    halign: 'center'
+                    valign: 'middle'
+
+        BoxLayout:
+            #rows:3
+            orientation: 'vertical'
+
+            Label:
+                text: "Booth 4"
+                font_size:30
+                size_hint: (1,0.5)
+
+                canvas.before:
+                    Color:
+                        rgba: (30 / 255, 40 / 255, 48 / 255, 1)
+                    RoundedRectangle:
+                        size: [self.width-60, self.height-150]
+                        pos: [(self.center_x - (self.width-60)/2),(self.center_y - (self.height-150)/2)]
+
+
+
+
+            Label:
+                color: (0,0,0,1)
+                text: root.gb4Pecnt
+                color: (1,1,1,1)
+                size_hint: None,None
+                width:100
+                height:100
+
+                pos_hint: {'center_x':0.5}
+
+                canvas.before:
+                    Color:
+                        rgba: (1,1,1,1)
+                    Ellipse:
+                        size: self.size
+                        pos: self.pos
+
+                    Color:
+                        rgba: (50/255, 168/255, 82/255, 1)
+                    Ellipse:
+                        size: self.size
+                        pos: self.pos
+                        angle_end: root.gb4Angle
+
+                    Color:
+                        rgba: (0,0,0,1)
+                    Ellipse:
+                        size: [self.width-30, self.height-30]
+                        pos: [(self.center_x - (self.width-30)/2),(self.center_y - (self.height-30)/2)]
+
+            GridLayout:
+                rows:4
+                cols:2
+                padding: [25,80,0,0]
+                spacing: [10,50]
+
+
+
+                Label:
+                    text: "Available Vol:"
+                    text_size: self.size
+                    halign: 'center'
+                    valign: 'middle'
+                    canvas.before:
+                        Color:
+                            rgba: (30 / 255, 40 / 255, 48 / 255, 1)
+                        RoundedRectangle:
+                            size: 220, 80
+                            pos: [self.center_x - 60,self.center_y - 40]
+
+                Label:
+                    
+					
+                    text_size: self.size
+                    text: root.b4AvaVol
+                    halign: 'center'
+                    valign: 'middle'
+
+
+                Label:
+                    text: "Max Vol:"
+                    text_size: self.size
+                    halign: 'center'
+                    valign: 'middle'
+                    canvas.before:
+                        Color:
+                            rgba: (30 / 255, 40 / 255, 48 / 255, 1)
+                        RoundedRectangle:
+                            size: 220, 80
+                            pos: [self.center_x - 60,self.center_y - 40]
+
+                Label:
+                    text: "240L"
+                    text_size: self.size
+                    halign: 'center'
+                    valign: 'middle'
+
+                Label:
+                    text: "Requested:"
+                    text_size: self.size
+                    halign: 'center'
+                    valign: 'middle'
+                    canvas.before:
+                        Color:
+                            rgba: (30 / 255, 40 / 255, 48 / 255, 1)
+                        RoundedRectangle:
+                            size: 220, 80
+                            pos: [self.center_x - 60,self.center_y - 40]
+
+                Label:
+                    
+					
+                    text: "Yes"
+                    text_size: self.size
+                    halign: 'center'
+                    valign: 'middle'
+
+                Label:
+                    text: "Elapsed time:"
+                    text_size: self.size
+                    halign: 'center'
+                    valign: 'middle'
+                    canvas.before:
+                        Color:
+                            rgba: (30 / 255, 40 / 255, 48 / 255, 1)
+                        RoundedRectangle:
+                            size: 220, 80
+                            pos: [self.center_x - 60,self.center_y - 40]
+
+                Label:
+                    
+					
+                    text: "10 min"
+                    text_size: self.size
+                    halign: 'center'
+                    valign: 'middle'
+
+        BoxLayout:
+            #rows:3
+            orientation: 'vertical'
+
+            Label:
+                text: "Booth 5"
+                font_size:30
+                size_hint: (1,0.5)
+
+                canvas.before:
+                    Color:
+                        rgba: (30 / 255, 40 / 255, 48 / 255, 1)
+                    RoundedRectangle:
+                        size: [self.width-60, self.height-150]
+                        pos: [(self.center_x - (self.width-60)/2),(self.center_y - (self.height-150)/2)]
+
+
+
+
+            Label:
+                color: (0,0,0,1)
+                text: root.gb5Pecnt
+                color: (1,1,1,1)
+                size_hint: None,None
+                width:100
+                height:100
+
+                pos_hint: {'center_x':0.5}
+
+                canvas.before:
+                    Color:
+                        rgba: (1,1,1,1)
+                    Ellipse:
+                        size: self.size
+                        pos: self.pos
+
+                    Color:
+                        rgba: (50/255, 168/255, 82/255, 1)
+                    Ellipse:
+                        size: self.size
+                        pos: self.pos
+                        angle_end: root.gb5Angle
+
+                    Color:
+                        rgba: (0,0,0,1)
+                    Ellipse:
+                        size: [self.width-30, self.height-30]
+                        pos: [(self.center_x - (self.width-30)/2),(self.center_y - (self.height-30)/2)]
+
+            GridLayout:
+                rows:4
+                cols:2
+                padding: [25,80,0,0]
+                spacing: [10,50]
+
+
+
+                Label:
+                    text: "Available Vol:"
+                    text_size: self.size
+                    halign: 'center'
+                    valign: 'middle'
+                    canvas.before:
+                        Color:
+                            rgba: (30 / 255, 40 / 255, 48 / 255, 1)
+                        RoundedRectangle:
+                            size: 220, 80
+                            pos: [self.center_x - 60,self.center_y - 40]
+
+                Label:
+                    
+					
+                    text_size: self.size
+                    text: root.b5AvaVol
+                    halign: 'center'
+                    valign: 'middle'
+
+
+                Label:
+                    text: "Max Vol:"
+                    text_size: self.size
+                    halign: 'center'
+                    valign: 'middle'
+                    canvas.before:
+                        Color:
+                            rgba: (30 / 255, 40 / 255, 48 / 255, 1)
+                        RoundedRectangle:
+                            size: 220, 80
+                            pos: [self.center_x - 60,self.center_y - 40]
+
+                Label:
+                    text: "240L"
+                    text_size: self.size
+                    halign: 'center'
+                    valign: 'middle'
+
+                Label:
+                    text: "Requested:"
+                    text_size: self.size
+                    halign: 'center'
+                    valign: 'middle'
+                    canvas.before:
+                        Color:
+                            rgba: (30 / 255, 40 / 255, 48 / 255, 1)
+                        RoundedRectangle:
+                            size: 220, 80
+                            pos: [self.center_x - 60,self.center_y - 40]
+
+                Label:
+                    
+					
+                    text: "Yes"
+                    text_size: self.size
+                    halign: 'center'
+                    valign: 'middle'
+
+                Label:
+                    text: "Elapsed time:"
+                    text_size: self.size
+                    halign: 'center'
+                    valign: 'middle'
+                    canvas.before:
+                        Color:
+                            rgba: (30 / 255, 40 / 255, 48 / 255, 1)
+                        RoundedRectangle:
+                            size: 220, 80
+                            pos: [self.center_x - 60,self.center_y - 40]
+
+                Label:
+                    
+					
+                    text: "10 min"
+                    text_size: self.size
+                    halign: 'center'
+                    valign: 'middle'
+
+        BoxLayout:
+            #rows:3
+            orientation: 'vertical'
+
+            Label:
+                text: "Booth 6"
+                font_size:30
+                size_hint: (1,0.5)
+
+                canvas.before:
+                    Color:
+                        rgba: (30 / 255, 40 / 255, 48 / 255, 1)
+                    RoundedRectangle:
+                        size: [self.width-60, self.height-150]
+                        pos: [(self.center_x - (self.width-60)/2),(self.center_y - (self.height-150)/2)]
+
+
+
+
+            Label:
+                color: (0,0,0,1)
+                text: root.gb6Pecnt
+                color: (1,1,1,1)
+                size_hint: None,None
+                width:100
+                height:100
+
+                pos_hint: {'center_x':0.5}
+
+                canvas.before:
+                    Color:
+                        rgba: (1,1,1,1)
+                    Ellipse:
+                        size: self.size
+                        pos: self.pos
+
+                    Color:
+                        rgba: (50/255, 168/255, 82/255, 1)
+                    Ellipse:
+                        size: self.size
+                        pos: self.pos
+                        angle_end: root.gb6Angle
+
+                    Color:
+                        rgba: (0,0,0,1)
+                    Ellipse:
+                        size: [self.width-30, self.height-30]
+                        pos: [(self.center_x - (self.width-30)/2),(self.center_y - (self.height-30)/2)]
+
+            GridLayout:
+                rows:4
+                cols:2
+                padding: [25,80,0,0]
+                spacing: [10,50]
+
+
+
+                Label:
+                    text: "Available Vol:"
+                    text_size: self.size
+                    halign: 'center'
+                    valign: 'middle'
+                    canvas.before:
+                        Color:
+                            rgba: (30 / 255, 40 / 255, 48 / 255, 1)
+                        RoundedRectangle:
+                            size: 220, 80
+                            pos: [self.center_x - 60,self.center_y - 40]
+
+                Label:
+                    
+					
+                    text_size: self.size
+                    text: root.b6AvaVol
+                    halign: 'center'
+                    valign: 'middle'
+
+
+                Label:
+                    text: "Max Vol:"
+                    text_size: self.size
+                    halign: 'center'
+                    valign: 'middle'
+                    canvas.before:
+                        Color:
+                            rgba: (30 / 255, 40 / 255, 48 / 255, 1)
+                        RoundedRectangle:
+                            size: 220, 80
+                            pos: [self.center_x - 60,self.center_y - 40]
+
+                Label:
+                    text: "240L"
+                    text_size: self.size
+                    halign: 'center'
+                    valign: 'middle'
+
+                Label:
+                    text: "Requested:"
+                    text_size: self.size
+                    halign: 'center'
+                    valign: 'middle'
+                    canvas.before:
+                        Color:
+                            rgba: (30 / 255, 40 / 255, 48 / 255, 1)
+                        RoundedRectangle:
+                            size: 220, 80
+                            pos: [self.center_x - 60,self.center_y - 40]
+
+                Label:
+                    
+					
+                    text: "Yes"
+                    text_size: self.size
+                    halign: 'center'
+                    valign: 'middle'
+
+                Label:
+                    text: "Elapsed time:"
+                    text_size: self.size
+                    halign: 'center'
+                    valign: 'middle'
+                    canvas.before:
+                        Color:
+                            rgba: (30 / 255, 40 / 255, 48 / 255, 1)
+                        RoundedRectangle:
+                            size: 220, 80
+                            pos: [self.center_x - 60,self.center_y - 40]
+
+                Label:
+
+
+                    text: "10 min"
+                    text_size: self.size
+                    halign: 'center'
+                    valign: 'middle'
+
